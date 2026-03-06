@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>線上擲筊 | 尋求神明指引</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>楠梓高中誠心擲筊</h1>
+            <p>請在心中默念您的姓名、出生年月日、地址，以及想請示的問題，隨後點擊下方按鈕擲筊。</p>
+        </header>
+
+        <main>
+            <!-- 擲筊展示桌台 -->
+            <div class="altar">
+                <div class="blocks-container" id="blocks-container">
+                    <!-- 左筊 -->
+                    <div class="block-wrapper" id="block-left">
+                        <div class="shadow-layer" id="shadow-left"></div>
+                        <div class="moon-block">
+                            <div class="face flat-face"></div>
+                            <div class="face curve-face"></div>
+                        </div>
+                    </div>
+                    <!-- 右筊 -->
+                    <div class="block-wrapper" id="block-right">
+                        <div class="shadow-layer" id="shadow-right"></div>
+                        <div class="moon-block">
+                            <div class="face flat-face"></div>
+                            <div class="face curve-face"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="throw-btn" class="btn throw-btn">擲筊 (Throw)</button>
+            </div>
+
+            <!-- 結果顯示區 -->
+            <div class="result-area" id="result-area">
+                <h2 id="result-title" class="result-title">等待神明指示...</h2>
+                <p id="result-desc" class="result-desc"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>僅供參考，心誠則靈</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
